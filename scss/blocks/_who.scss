@@ -1,0 +1,144 @@
+.who-section{
+    padding: 100px 0;
+    background-color: var(--who-bg);
+    background-image: url("../images/who-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: top left;
+}
+
+.who{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.who__title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: var(--who-title-color);
+}
+
+.who__text-div{
+    width: 445px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.who__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--who-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.who__link{
+    padding: 16px 32px 14px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: var(--who-link-color);
+    border: 1px solid var(--who-link-border);
+    border-radius: 24px;
+}
+
+.who__link:hover{
+    color: #1B262F;
+    background: #FFFFFF;
+}
+
+.who__list{
+    max-width: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1050px){
+    .who-section{
+        padding: 95px 0 88px;
+        background-image: url("../../images/who-tablet-bg.png");
+        background-repeat: no-repeat;
+        background-size: 98% 40%;
+        background-position: top center;
+    }
+
+    .who{
+        flex-direction: column-reverse;
+        gap: 64px;
+    }
+
+    .who-left{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .who-section{
+        padding: 95px 4px 88px;
+        background-image: url("../../images/who-mobile-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 25%;
+        background-position: top;
+    }
+
+    .who__list{
+        max-width: 280px;
+        gap: 48px;
+    }
+
+    .who__item:first-child a svg{
+        width: 107px;
+        height: 15px;
+    }
+    .who__item:nth-child(2) a svg{
+        width: 120px;
+        height: 26px;
+    }
+    .who__item:nth-child(3) a svg{
+        width: 115px;
+        height: 22px;
+    }
+    .who__item:nth-child(4) a svg{
+        width: 108px;
+        height: 14px;
+    }
+    .who__item:nth-child(5) a svg{
+        width: 79px;
+        height: 27px;
+    }
+    .who__item:last-child a svg{
+        width: 113px;
+        height: 22px;
+    }
+
+    .who{
+        flex-direction: column-reverse;
+        gap: 56px;
+    }
+
+    .who-left{
+        text-align: center;
+    }
+
+    .who__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .who__text-div{
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 60px;
+    }
+}

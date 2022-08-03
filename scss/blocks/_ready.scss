@@ -1,0 +1,122 @@
+.ready-section{
+    padding: 0 0 96px;
+}
+
+.ready{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ready__title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: var(--ready-title-color);    
+}
+
+.ready form{
+    width: 445px;
+    position: relative;
+}
+
+.ready input{
+    width: 100%;
+    padding: 16px 0 14px 27px;
+    background: var(--ready-input-bg);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+}
+
+.ready input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--ready-input-color);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.ready input:hover::placeholder{
+    opacity: 1;
+}
+
+.ready form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 24.5px 14px 26.5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: var(--ready-button-color);
+    background: var(--ready-button-bg);
+    border-radius: 24px;
+    border: none;
+}
+
+.ready form button:hover{
+    background: #DA6D97;
+}
+
+@media screen and (max-width: 991px){
+    .ready-section{
+        padding: 0 15% 100px;
+    }
+    
+    .ready{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .ready form{
+        width: 100%;
+        position: relative;
+    }
+    
+    .ready input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .ready-section{
+        padding: 0 4px 80px;
+    }
+    
+    .ready{
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .ready__title{
+        font-size: 36px;
+        line-height: 36px;   
+    }
+    
+    .ready form{
+        width: 100%;
+        position: inherit;
+    }
+    
+    .ready input{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    .ready input:hover::placeholder{
+        opacity: 1;
+    }
+    
+    .ready form button{
+        width: 100%;
+        position: inherit;
+        padding: 16px 0 14px 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,110 @@
+.site-footer{
+    padding: 31px 0;
+    background-color: var(--footer-bg);
+    background-image: url("../images/footer-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 24% 100%;
+    background-position: right;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.footer__list{
+    display: flex;
+    gap: 40px;
+}
+
+.footer__item-link{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--footer-item-color);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.footer__item-link:hover{
+    opacity: 1;
+}
+
+.footer__img-wrapper{
+    display: flex;
+    gap: 24px;
+}
+
+.footer-left svg path{
+    fill: #FFFFFF;
+}
+
+.footer__img-wrapper svg:hover path{
+    fill: #DA6D97;
+}
+
+@media screen and (max-width: 911px){
+    .site-footer{
+        padding: 31px 0;
+        background-image: url("../images/footer-tablet-bg.png");
+        background-repeat: no-repeat;
+        background-size: 50%% 100%;
+        background-position: right;
+    }
+    
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer-left{
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+    
+    .footer__list{
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 621px){
+    .site-footer{
+        padding: 41px 0 55px;
+        background-image: url("../images/footer-mobile-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+    }
+    
+    .footer{
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 39px;
+    }
+    
+    .footer-left{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+        gap: 31px;
+    }
+    
+    .footer__img-wrapper{
+        margin: 0 auto;
+        gap: 24px;
+    }
+}
